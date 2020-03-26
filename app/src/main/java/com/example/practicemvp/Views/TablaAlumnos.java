@@ -105,9 +105,9 @@ public class TablaAlumnos extends Fragment implements TablaAlumnoPresentador.Vie
             tr1.addView(tvEdad);
 
             btnAlumno = new Button(getActivity());
-            btnAlumno.setText("Informacion");
+            btnAlumno.setText("Ver mas");
             btnAlumno.setGravity(Gravity.CENTER);
-            btnAlumno.setBackgroundColor(Color.GREEN);
+            btnAlumno.setBackgroundColor(Color.RED);
             btnAlumno.setTag(alumnos.get(p).id);
             btnAlumno.setTextColor(Color.BLACK);
             tr1.addView(btnAlumno);
@@ -117,9 +117,8 @@ public class TablaAlumnos extends Fragment implements TablaAlumnoPresentador.Vie
                 @Override
                 public void onClick(android.view.View view) {
                     int id = Integer.parseInt(view.getTag().toString());
-                    Toast.makeText(getContext(), "Alumno seleccionado "+ id, Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), "Id de alumno seleccionado ="+ id, Toast.LENGTH_LONG).show();
                     present.getAlumno(id);
-                    //getAlumno(id);
                 }
             });
             tl.addView(tr1);

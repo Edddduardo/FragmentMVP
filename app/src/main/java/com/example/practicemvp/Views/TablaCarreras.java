@@ -95,9 +95,9 @@ public class TablaCarreras extends Fragment implements TablaCarreraPresentador.V
             tr1.addView(tvPeriodo);
 
             btnCarrera = new Button(getActivity());
-            btnCarrera.setText("Informacion");
+            btnCarrera.setText("Ver mas");
             btnCarrera.setGravity(Gravity.CENTER);
-            btnCarrera.setBackgroundColor(Color.GREEN);
+            btnCarrera.setBackgroundColor(Color.BLUE);
             btnCarrera.setTag(carreras.get(p).id);
             btnCarrera.setTextColor(Color.BLACK);
             tr1.addView(btnCarrera);
